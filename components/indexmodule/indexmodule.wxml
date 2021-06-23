@@ -1,0 +1,23 @@
+<!--components/indexmodule/indexmodule.wxml-->
+<view class="module-group">
+  <view class="module-top">
+    <view class="module-title">{{title}}</view>
+    <navigator url="{{moreurl}}" class="module-more">更多</navigator>
+  </view>
+  <scroll-view class="module-scoll-view" scroll-x="{{true}}">
+    <block wx:for="{{items}}" wx:key="{{item.title}}">
+      <navigator class="item-navigator" url="../../pages/moviedetail/moviedetail">
+        <view class="item-group">
+          <view class="thumbnail-group">
+            <image class="thumbnail" src="{{item.cover.url}}">
+            </image>
+          </view>
+          <view class="item-title">{{item.title}}</view>
+          <van-rate value="{{item.rating.value/2}}" bind:change="{{onChange}}" readonly allow-half size="{{ 13 }}"
+            color="#FF4500" void-color="#eee" void-icon="star" />
+          <text>{{item.rating.value}}</text>
+        </view>
+      </navigator>
+    </block>
+  </scroll-view>
+</view>

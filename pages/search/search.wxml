@@ -1,0 +1,2 @@
+<!--pages/search/search.wxml-->
+<van-search value="{{ value }}" background="#41be57" placeholder="请输入搜索关键词" />

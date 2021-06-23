@@ -1,0 +1,13 @@
+<view class="search">
+  <navigator class="search-navigator" url='../../pages/search/search'>
+    <icon class="icon-box-img" type="search" size="20"></icon>
+  </navigator>
+</view>
+
+<!-- 电影 -->
+<indexmodule title="电影" items="{{movies}}"></indexmodule>
+<!-- 电视剧 -->
+<indexmodule title="电视剧" items="{{tvs}}"></indexmodule>
+
+<!-- 综艺 -->
+<indexmodule title="综艺" items="{{shows}}"></indexmodule>
