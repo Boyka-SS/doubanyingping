@@ -1,13 +1,8 @@
-<view class="search">
-  <navigator class="search-navigator" url='../../pages/search/search'>
-    <icon class="icon-box-img" type="search" size="20"></icon>
-  </navigator>
-</view>
+<searchbar></searchbar>
 
 <!-- 电影 -->
-<indexmodule title="电影" items="{{movies}}"></indexmodule>
+<indexmodule title="电影" items="{{movies}}" moreurl="/pages/list/list?type=movie"></indexmodule>
 <!-- 电视剧 -->
-<indexmodule title="电视剧" items="{{tvs}}"></indexmodule>
-
+<indexmodule title="电视剧" items="{{tvs}}" moreurl="/pages/list/list?type=tv"></indexmodule>
 <!-- 综艺 -->
-<indexmodule title="综艺" items="{{shows}}"></indexmodule>
+<indexmodule title="综艺" items="{{shows}}" moreurl="/pages/list/list?type=show"></indexmodule>

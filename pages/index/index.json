@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "indexmodule":"/components/indexmodule/indexmodule"
+    "indexmodule":"/components/indexmodule/indexmodule",
+    "searchbar":"/components/searchbar/searchbar"
   }
 }

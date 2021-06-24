@@ -5,19 +5,6 @@
     <navigator url="{{moreurl}}" class="module-more">更多</navigator>
   </view>
   <scroll-view class="module-scoll-view" scroll-x="{{true}}">
-    <block wx:for="{{items}}" wx:key="{{item.title}}">
-      <navigator class="item-navigator" url="../../pages/moviedetail/moviedetail">
-        <view class="item-group">
-          <view class="thumbnail-group">
-            <image class="thumbnail" src="{{item.cover.url}}">
-            </image>
-          </view>
-          <view class="item-title">{{item.title}}</view>
-          <van-rate value="{{item.rating.value/2}}" bind:change="{{onChange}}" readonly allow-half size="{{ 13 }}"
-            color="#FF4500" void-color="#eee" void-icon="star" />
-          <text>{{item.rating.value}}</text>
-        </view>
-      </navigator>
-    </block>
+    <itemview wx:for="{{items}}" wx:key="title" item="{{item}}"></itemview>
   </scroll-view>
 </view>

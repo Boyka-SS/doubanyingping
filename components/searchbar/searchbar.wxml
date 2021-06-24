@@ -1,0 +1,7 @@
+<!--components/searchbar/searchbar.wxml-->
+<view class="search">
+  <navigator class="search-navigator" url='../../pages/search/search'>
+    <icon class="icon-box-img" type="search" size="20"></icon>
+  </navigator>
+</view>
+

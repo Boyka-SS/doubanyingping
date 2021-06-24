@@ -1,0 +1,15 @@
+<!--components/itemview/itemview.wxml-->
+<navigator wx:if="{{item}}" class="item-navigator" >
+  <view class="item-group">
+    <view class="thumbnail-group">
+      <image class="thumbnail" src="{{item.cover.url}}">
+      </image>
+    </view>
+    <view class="item-title">{{item.title}}</view>
+    <van-rate value="{{item.rating.value/2}}" bind:change="{{onChange}}" readonly allow-half size="{{ 13 }}"
+      color="#FF4500" void-color="#eee" void-icon="star" />
+    <text>{{item.rating.value!=null?item.rating.value:"0.0"}}</text>
+  </view>
+</navigator>
+
+<view wx:else class="item-navigator"></view>

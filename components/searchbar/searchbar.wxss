@@ -1,0 +1,19 @@
+/* components/searchbar/searchbar.wxss */
+/* 搜索栏导航 */
+.search {
+  width: auto;
+  height: auto;
+  padding: 20rpx 24rpx;
+  background-color: #41be57;
+}
+
+.search-navigator {
+  width: 700rpx;
+  height: 68rpx;
+  border-radius: 15rpx;
+  background-color: #fff;
+}
+
+.icon-box-img {
+  margin: 18rpx 50%;
+}

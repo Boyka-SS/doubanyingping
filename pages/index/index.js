@@ -1,6 +1,6 @@
 // index.js
 // 获取应用实例
-import { network } from 'network.js';
+import { network } from '../../utils/network.js';
 const app = getApp();
 
 Page({
