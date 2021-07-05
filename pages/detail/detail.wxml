@@ -1,0 +1,100 @@
+<view class="item-header">
+  <view class="item-title">海王 Aquaman（2018）</view>
+  <view class="item-detail">
+    <view class="left_detail">
+      <view class="item-rate">
+        <van-rate value="{{8/2}}" readonly allow-half size="{{ 13 }}" color="#FF4500" void-color="#eee"
+          void-icon="star" />
+
+        <text class="comment-persons">203894人评价</text>
+      </view>
+      <view class="item-sub-rate">
+        <view class="item-type">
+          143分钟 动作/奇幻/冒险
+        </view>
+        <view class="item-show">
+          2018-12-07（中国大陆）上映 美国
+        </view>
+        <view class="item-actors">
+          温子仁（导演）/杰森莫妈/艾美帕
+        </view>
+      </view>
+    </view>
+    <view class="right_detail">
+      <image src="https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2654915204.webp"></image>
+    </view>
+  </view>
+</view>
+
+<view class="item-tags">
+  <view class="item-tags-title">豆瓣成员常用标签</view>
+  <view class="item-tags-list">
+    <text>黑色幽默</text>
+    <text>小人物</text>
+    <text>戏剧</text>
+    <text>方言</text>
+    <text>中国大陆</text>
+    <text>人性</text>
+    <text>剧情</text>
+  </view>
+</view>
+
+
+<view class="comment-list-group">
+  <view class="comment-title">短评（200000000000）</view>
+  <view class="comment-group">
+    <view class="left-comment">
+      <image class="avatar" src="https://img2.doubanio.com/icon/u142840694-3.jpg"></image>
+    </view>
+    <view class="right-comment">
+      <view class="username-rate">
+        <text class="username">樊力豪</text>
+        <van-rate value="{{8/2}}"></van-rate>
+      </view>
+      <view class="release-time">2018-12-03 12:22:22</view>
+      <view class="content-comment">
+        这部三个半小时的电影《巴赫曼先生和他的学生》提供了另一种教育可能的凝视。原来教育是这个样子，老师和学生平等的聊天，聊自己的生活，聊家乡，聊内心的归宿，聊性的启蒙，聊历史教训，原来教育可以是在一间教室里摆上各种乐器，老师和学生一起阅读各种课外书籍，原来教育是每个学生都一种互相理解关爱的氛围里成长，原来教育是每个学生对自己的未来都有各自的幸福的出路，原来教育对每个人的评分可以那么多角度.......
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="comment-list-group">
+  <view class="comment-title">短评（200000000000）</view>
+  <view class="comment-group">
+    <view class="left-comment">
+      <image class="avatar" src="https://img2.doubanio.com/icon/u142840694-3.jpg"></image>
+    </view>
+    <view class="right-comment">
+      <view class="username-rate">
+        <text class="username">樊力豪</text>
+        <van-rate value="{{8/2}}"></van-rate>
+      </view>
+      <view class="release-time">2018-12-03 12:22:22</view>
+      <view class="content-comment">
+        这部三个半小时的电影《巴赫曼先生和他的学生》提供了另一种教育可能的凝视。原来教育是这个样子，老师和学生平等的聊天，聊自己的生活，聊家乡，聊内心的归宿，聊性的启蒙，聊历史教训，原来教育可以是在一间教室里摆上各种乐器，老师和学生一起阅读各种课外书籍，原来教育是每个学生都一种互相理解关爱的氛围里成长，原来教育是每个学生对自己的未来都有各自的幸福的出路，原来教育对每个人的评分可以那么多角度.......
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="comment-list-group">
+  <view class="comment-title">短评（200000000000）</view>
+  <view class="comment-group">
+    <view class="left-comment">
+      <image class="avatar" src="https://img2.doubanio.com/icon/u142840694-3.jpg"></image>
+    </view>
+    <view class="right-comment">
+      <view class="username-rate">
+        <text class="username">樊力豪</text>
+        <van-rate value="{{8/2}}"></van-rate>
+      </view>
+      <view class="release-time">2018-12-03 12:22:22</view>
+      <view class="content-comment">
+        这部三个半小时的电影《巴赫曼先生和他的学生》提供了另一种教育可能的凝视。原来教育是这个样子，老师和学生平等的聊天，聊自己的生活，聊家乡，聊内心的归宿，聊性的启蒙，聊历史教训，原来教育可以是在一间教室里摆上各种乐器，老师和学生一起阅读各种课外书籍，原来教育是每个学生都一种互相理解关爱的氛围里成长，原来教育是每个学生对自己的未来都有各自的幸福的出路，原来教育对每个人的评分可以那么多角度.......
+      </view>
+    </view>
+  </view>
+</view>
+
+<navigator class="more-coment">查看更多短评</navigator>

@@ -1,4 +1,4 @@
-// pages/moviedetail/moviedetail.js
+// pages/detail/detail.js
 Page({
 
   /**

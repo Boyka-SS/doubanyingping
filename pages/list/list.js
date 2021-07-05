@@ -16,13 +16,17 @@ Page({
     let that = this;
     let title = "";
     let type = options.type;
+    wx.showLoading({
+      title: '正在记载中...',
+    })
     if (type === "movie") {
       //电影
       network.getMoviesList({
         success: function (movies) {
           that.setData({
             items: movies
-          })
+          }),
+          wx.hideLoading();
         }, count: 1000
       });
       title = "电影"
@@ -32,7 +36,8 @@ Page({
         success: function (tvs) {
           that.setData({
             items: tvs
-          })
+          }),
+          wx.hideLoading();
         }, count: 1000
       });
       title = "电视剧"
@@ -42,7 +47,8 @@ Page({
         success: function (shows) {
           that.setData({
             items: shows
-          })
+          }),
+          wx.hideLoading();
         }, count: 1000
       });
       title = "综艺"
