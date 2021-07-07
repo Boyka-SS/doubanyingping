@@ -1,5 +1,5 @@
 <!--pages/list/list.wxml-->
 <searchbar></searchbar>
 <view class="container">
-  <itemview wx:for="{{items}}" wx:key="title" item="{{item}}"></itemview>
+  <itemview wx:for="{{items}}" wx:key="title" item="{{item}}" itemUrl="/pages/detail/detail?type={{type}}&id={{item.id}}"></itemview>
 </view>

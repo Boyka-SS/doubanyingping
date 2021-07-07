@@ -16,6 +16,9 @@ Page({
     let that = this;
     let title = "";
     let type = options.type;
+    this.setData({
+      type:type
+    })
     wx.showLoading({
       title: '正在记载中...',
     })

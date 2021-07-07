@@ -5,8 +5,12 @@ Component({
    */
   properties: {
     item: {
-      type:Object,
+      type: Object,
       value: {}
+    },
+    itemUrl: {
+      type: String,
+      value: ''
     }
   },
 

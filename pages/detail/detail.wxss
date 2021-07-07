@@ -79,6 +79,7 @@
 .comment-list-group .comment-group {
   display: flex;
   justify-content: flex-start;
+  margin-top: 40rpx;
 }
 
 .comment-group .left-comment {

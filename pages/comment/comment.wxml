@@ -1,0 +1,7 @@
+<view class="container">
+    <view class="item-group">
+        <image class="thumbnail" src="{{thumbnail}}"></image>
+        <text class="item-title">{{title}}</text>
+        <text class="item-rate">{{rate}}分</text>
+    </view>
+</view>

@@ -16,6 +16,10 @@ Component({
       type: Array,
       value: []
     },
+    type: {
+      type: String,
+      value: ""
+    }
   },
 
   /**

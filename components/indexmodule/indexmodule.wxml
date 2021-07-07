@@ -5,6 +5,6 @@
     <navigator url="{{moreurl}}" class="module-more">更多</navigator>
   </view>
   <scroll-view class="module-scoll-view" scroll-x="{{true}}">
-    <itemview wx:for="{{items}}" wx:key="title" item="{{item}}"></itemview>
+    <itemview wx:for="{{items}}" wx:key="title" item="{{item}}" itemUrl="/pages/detail/detail?type={{type}}&id={{item.id}}"></itemview>
   </scroll-view>
 </view>
