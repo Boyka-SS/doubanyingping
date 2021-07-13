@@ -3,7 +3,8 @@
   <view class="item-detail">
     <view class="left_detail">
       <view class="item-rate">
-        <van-rate value="{{item.rating.star_count}}" readonly allow-half size="{{ 15 }}" color="#FF4500" void-color="#eee" void-icon="star" />
+        <van-rate value="{{item.rating.star_count}}" readonly allow-half size="{{ 15 }}" color="#FF4500"
+          void-color="#eee" void-icon="star" />
         <text style="margin-left:4rpx;font-size:28rpx">{{item.rating.value}}</text>
         <text class="comment-persons">{{item.rating.count}} 人评价</text>
       </view>
@@ -28,20 +29,10 @@
 </view>
 <view class="comment-list-group">
   <view class="comment-title">短评（{{totalComment}}）</view>
-  <view class="comment-group" wx:for="{{comments}}" wx:key="id">
-    <view class="left-comment">
-      <image class="avatar" src="{{item.user.avatar}}"></image>
-    </view>
-    <view class="right-comment">
-      <view class="username-rate">
-        <text class="username">{{item.user.name}}</text>
-        <van-rate value="{{item.rating.value}}"></van-rate>
-      </view>
-      <view class="release-time">{{item.create_time}}</view>
-      <view class="content-comment">{{item.comment}}</view>
-    </view>
-  </view>
+  <onecomment wx:for="{{comments}}" item="{{item}}" wx:key="id"></onecomment>
 </view>
-<navigator class="more-coment" url="/pages/comment/comment?type={{type}}&id={{id}}&thumbnail={{item.cover.image.small.url}}&title={{item.title}}&rate={{item.rating.value}}">
+
+<navigator class="more-coment"
+  url="/pages/comment/comment?type={{type}}&id={{id}}&thumbnail={{item.cover.image.small.url}}&title={{item.title}}&rate={{item.rating.value}}">
   查看更多短评
 </navigator>

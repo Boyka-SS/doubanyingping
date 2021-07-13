@@ -1,2 +1,23 @@
 <!--pages/search/search.wxml-->
-<van-search value="{{ value }}" background="#41be57" placeholder="请输入搜索关键词" />
+<van-search focus="{{true}}" value="{{ value }}" background="#41be57" placeholder="请输入搜索关键词" bind:search="onSearch" />
+
+<view class="history-list-group" wx:if="{{histories && !subjects}}">
+  <view class="history-title">
+    <view class="title">历史记录</view>
+    <view class="clear" bindtap="onClearEvent">清除</view>
+  </view>
+  <navigator wx:for="{{histories}}" wx:key="id" url="/pages/detail/detail?type=movie&id={{item.id}}"
+    class="history-group">{{item.title}}</navigator>
+</view>
+
+
+<view class="item-list-group">
+  <view wx:for="{{items}}" class="item-group" wx:key="id" bindtap="onItemTapEvent" data-id="{{item.target.id}}"
+    data-title="{{item.target.title}}">
+    <image src="{{item.target.cover_url}}" class="thumbnail"></image>
+    <view class="info-group">
+      <view class="title">{{item.target.title}}</view>
+      <view class="rate-year">{{item.target.rating.value}}分/{{item.target.year}}</view>
+    </view>
+  </view>
+</view>

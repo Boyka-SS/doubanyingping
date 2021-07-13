@@ -98,7 +98,6 @@ const network = {
     wx.request({
       url: url,
       success: (res) => {
-         
         let data = res.data;
         if (params.success) {
           params.success(data);
@@ -106,5 +105,21 @@ const network = {
       },
     });
   },
+  getSearch: function (params) {
+    let q = params.q;
+    let url = globalUrls.searchUrl(q);
+
+    wx.request({
+      url: url,
+      success: (res) => {
+       
+       let subjects = res.data.subjects;
+      
+       if (params.success) {
+        params.success(subjects);
+       }
+      }
+    })
+  }
 };
 export { network };

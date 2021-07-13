@@ -67,6 +67,7 @@
   margin-bottom: 20rpx;
 }
 
+/*  */
 .comment-list-group {
   padding: 60rpx 30rpx;
 }
@@ -76,53 +77,9 @@
   color: #b3b3b3;
 }
 
-.comment-list-group .comment-group {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 40rpx;
-}
-
-.comment-group .left-comment {
-  width: 70rpx;
-  margin-right: 20rpx;
-}
-
-.left-comment .avatar {
-  width: 70rpx;
-  height: 70rpx;
-  border-radius: 50%;
-}
-
-.comment-group .right-comment {
-  flex: 1;
-}
-
-.right-comment .username-rate {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.username-rate .username {
-  font-size: 36rpx;
-  margin-right: 20rpx;
-}
-
-.release-time {
-  color: #b3b3b3;
-  font-size: 32rpx;
-  margin-top: 10rpx;
-}
-
-.content-comment {
-  font-size: 32rpx;
-  color: #353535;
-  margin-top: 10rpx;
-}
-
 .more-coment {
-   text-align: center;
-   font-size: 36rpx;
-   color: #41be57;
-   margin-bottom: 40rpx;
+  text-align: center;
+  font-size: 36rpx;
+  color: #41be57;
+  margin-bottom: 40rpx;
 }

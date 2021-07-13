@@ -53,7 +53,7 @@ Page({
       type: type,
       id: id,
       success: function (data) {
-        let totalComment = data.totalComment;
+        let totalComment = data.total;
         let comments = data.interests;
         that.setData({
           totalComment: totalComment,
@@ -70,7 +70,11 @@ Page({
   /**
    * 生命周期函数--监听页面显示
    */
-  onShow: function () {},
+  onShow: function () {
+    wx.pageScrollTo({
+      scrollTop: 0,
+    })
+  },
 
   /**
    * 生命周期函数--监听页面隐藏
